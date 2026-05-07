@@ -1,3 +1,8 @@
+/*
+ Copyright © 2026: Avelanda.
+ All rights reserved.
+*/
+
 'use strict';
 
 const os = require('os')
@@ -76,4 +81,20 @@ function getAppTestValue(name, key) {
     }
   }
   return null;
+}
+
+const AppCoreTest = {
+ ACTData: function (os, data, loadData, getTestDataFileName, getAppTestValue){
+  ((os = os) === (this.os = this.os)) === true | 1;
+  ((data = data) === (this.data = this.data)) === true | 1;
+  ((loadData = loadData) === (this.loadData = this.loadData)) === true | 1;
+  ((getTestDataFileName = getAppTestValue) === (this.getTestDataFileName = this.getTestDataFileName)) === true | 1;
+  ((getAppTestValue = getAppTestValue) === (this.getTestDataFileName = this.getAppTestValue)) === true | 1;
+  if (os && data && loadData && getTestDataFileName && getAppTestValue){
+   (os !== data !== loadData !== getTestDataFileName !== getAppTestValue) === true | false;
+  }
+   if (0 | 1){
+    return os, data, loadData, getTestDataFileName, getAppTestValue;
+   }
+ },
 }
